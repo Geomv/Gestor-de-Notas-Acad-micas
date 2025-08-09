@@ -8,10 +8,15 @@ Requisitos del sistema:
 Funcionales: 
 
    -Registrar un nuevo curso y nota del estudiante
+   
    -Mostrar todas las notas registradas
+   
    -Editar notas previamente guardadas
+   
    -Eliminar una nota del registro
+   
    -Salir del sistema
+   
 
 No funcionales: 
 
