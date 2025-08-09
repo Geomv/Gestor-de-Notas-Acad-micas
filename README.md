@@ -14,7 +14,7 @@ Funcionales:
 No funcionales: 
     - El sistema se ejecuta en consola con Python
     - Sin librerías externas
-    - Bucles y condicionales en pseudocódigo
+    - Bucles y condicionales en pseudocódigo.
 
     
 
