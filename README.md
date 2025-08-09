@@ -7,21 +7,23 @@ Requisitos del sistema:
 
 Funcionales: 
 
-   -Registrar un nuevo curso y nota del estudiante
+      *Registrar un nuevo curso y nota del estudiante
    
-   -Mostrar todas las notas registradas
+      *Mostrar todas las notas registradas
    
-   -Editar notas previamente guardadas
+      *Editar notas previamente guardadas
    
-   -Eliminar una nota del registro
+      *Eliminar una nota del registro
    
-   -Salir del sistema
+      *Salir del sistema
    
 
 No funcionales: 
 
     - El sistema se ejecuta en consola con Python
+    
     - Sin librerías externas
+    
     - Bucles y condicionales en pseudocódigo.
 
     
