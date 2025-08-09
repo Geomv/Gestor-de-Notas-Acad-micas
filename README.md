@@ -5,11 +5,11 @@ Este proyecto no se limita a lo práctico, sino que también incorpora principio
 
 Requisitos del sistema: 
 Funcionales:
-    -Registrar un nuevo curso y nota del estudiante
-    -Mostrar todas las notas registradas
-    - Editar notas previamente guardadas
-    - Eliminar una nota del registro
-    -Salir del sistema
+    1- Registrar un nuevo curso y nota del estudiante
+    2- Mostrar todas las notas registradas
+    3- Editar notas previamente guardadas
+    4- Eliminar una nota del registro
+    5- Salir del sistema
 
 No funcionales: 
     - El sistema se ejecuta en consola con Python
