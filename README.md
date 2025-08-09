@@ -28,17 +28,17 @@ No funcionales:
 
 Diseño del menú principal en pseudocódigo:
 
-INICIO y FIN
+     -INICIO y FIN
 
-Lectura de la opción con LEER
+     -Lectura de la opción con LEER
 
-Impresión de opciones con IMPRIMIR (mínimo 5 ítems)
+     -Impresión de opciones con IMPRIMIR (mínimo 5 ítems)
 
-Bucle repetitivo (MIENTRAS … HACER … FIN_MIENTRAS) que mantenga activo el menú hasta elegir “Salir”
+     -Bucle repetitivo (MIENTRAS … HACER … FIN_MIENTRAS) que mantenga activo el menú hasta elegir “Salir”
 
-Condicionales para cada opción (SI … ENTONCES … SINO … FIN_SI)
+     -Condicionales para cada opción (SI … ENTONCES … SINO … FIN_SI)
 
-Marcadores de posición <acción> para indicar dónde irá la lógica detallada en las siguientes entregas
+     -Marcadores de posición <acción> para indicar dónde irá la lógica detallada en las siguientes entregas
 
     
 
