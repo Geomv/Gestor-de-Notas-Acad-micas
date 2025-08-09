@@ -26,5 +26,19 @@ No funcionales:
     
     - Bucles y condicionales en pseudocódigo.
 
+Diseño del menú principal en pseudocódigo:
+
+INICIO y FIN
+
+Lectura de la opción con LEER
+
+Impresión de opciones con IMPRIMIR (mínimo 5 ítems)
+
+Bucle repetitivo (MIENTRAS … HACER … FIN_MIENTRAS) que mantenga activo el menú hasta elegir “Salir”
+
+Condicionales para cada opción (SI … ENTONCES … SINO … FIN_SI)
+
+Marcadores de posición <acción> para indicar dónde irá la lógica detallada en las siguientes entregas
+
     
 
