@@ -4,11 +4,17 @@ El objetivo del proyecto Gestor de Notas Académicas es crear un sistema interac
 Este proyecto no se limita a lo práctico, sino que también incorpora principios esenciales de algoritmos y estructuras de datos tales como pilas, filas, búsquedas lineales y binarias, y ordenamientos. Por ejemplo, se implementará un sistema de cola para gestionar peticiones de revisión de notas, y se anotará el registro de modificaciones en otra estructura parecida. El objetivo es implementar  los conocimientos adquiridos en el segundo semestre de ingeniería, utilizando Python. 
 
 Requisitos del sistema: 
-Funcionales: * uno
+
+Funcionales: 
+
 *Registrar un nuevo curso y nota del estudiante
+
 *Mostrar todas las notas registradas
+
 *Editar notas previamente guardadas
+
 *Eliminar una nota del registro
+
 *Salir del sistema
 
 No funcionales: 
