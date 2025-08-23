@@ -1,0 +1,30 @@
+Algoritmo Avance2DeProyecto
+	Definir N Como Entero
+	Definir nota, promedio, suma Como Real
+	
+	Escribir "Ingrese la cantidad de notas que va a registrar"
+	Leer N
+	Si N <= 0 entonces 
+	Escribir "La nota debe ser mayor a 0"
+	FinSi
+	
+	//bucle para las notas "N"
+	Para i <- 1 Hasta N Hacer
+		Repetir
+			Escribir "Ingrese la nota #", i
+			Leer nota
+			Si (nota < 0) O (nota > 100) Entonces
+				Escribir "¡La nota no es válida! Debe ser un número entre 0 y 100"
+			FinSi
+		Hasta Que (nota >= 0) Y (nota <= 100)
+		Suma <- suma + nota
+	FinPara
+	
+	//Calculo de promedio
+	Promedio <- suma / N
+	
+	//Mostrar el Promedio
+	Escribir "" //para hacer un salto de linea
+	Escribir "El promedio de las " N, " notas es de: " promedio 
+	
+FinAlgoritmo
