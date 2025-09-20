@@ -1,0 +1,151 @@
+# Lista para almacenar cursos
+cursos = []
+
+##############################################
+# Función 1: Registrar nuevo curso
+##############################################
+def registrar_curso():
+    nombre = input("Ingrese el nombre del curso: ")
+    if not nombre:
+        print("El nombre del curso no puede estar vacío.")
+        return
+
+    nota = float(input("Ingrese la nota obtenida (0-100): "))
+    if 0 <= nota <= 100:
+        cursos.append({"nombre": nombre, "nota": nota})
+        print(f"Curso '{nombre}' registrado con éxito.")
+    else:
+        print("La nota debe estar entre 0 y 100.")
+
+###############################################
+# Función 2: Mostrar todos los cursos
+###############################################
+def mostrar_cursos():
+    if not cursos:
+        print("No hay cursos registrados.")
+    else:
+        print("Cursos registrados:")
+        for i, curso in enumerate(cursos, start=1):
+            print(f"{i}. {curso['nombre']} - Nota: {curso['nota']}")
+
+################################################
+# Función 3: Calcular promedio general
+################################################
+def calcular_promedio():
+    if not cursos:
+        print("No hay cursos registrados para calcular el promedio.")
+    else:
+        promedio = sum(c["nota"] for c in cursos) / len(cursos)
+        print(f"Promedio general: {promedio:.2f}")
+
+################################################
+# Función 4: Contar cursos aprobados y reprobados
+################################################
+def contar_aprobados_reprobados():
+    if not cursos:
+        print("No hay cursos registrados.")
+        return
+    
+    aprobados = sum(1 for c in cursos if c["nota"] >= 60)
+    reprobados = len(cursos) - aprobados
+    print(f"Cursos aprobados: {aprobados}")
+    print(f"Cursos reprobados: {reprobados}")
+
+################################################
+# Función 5: Buscar curso por nombre (búsqueda lineal)
+################################################
+def buscar_curso():
+    if not cursos:
+        print("No hay cursos registrados.")
+        return
+
+    nombre_buscar = input("Ingrese el nombre del curso a buscar: ").strip().lower()
+    encontrados = [c for c in cursos if nombre_buscar in c["nombre"].lower()]
+    
+    if encontrados:
+        for c in encontrados:
+            print(f"Curso encontrado: {c['nombre']} - Nota: {c['nota']}")
+    else:
+        print("No se encontró ningún curso con ese nombre.")
+
+################################################
+# Función 6: Actualizar nota de un curso
+################################################
+def actualizar_nota():
+    if not cursos:
+        print("No hay cursos registrados.")
+        return
+    
+    nombre_buscar = input("Ingrese el nombre del curso a actualizar: ").strip().lower()
+    for c in cursos:
+        if c["nombre"].lower() == nombre_buscar:
+            nueva_nota = float(input(f"Ingrese la nueva nota para '{c['nombre']}' (0-100): "))
+            if 0 <= nueva_nota <= 100:
+                c["nota"] = nueva_nota
+                print(f"Nota actualizada correctamente para '{c['nombre']}'.")
+            else:
+                print("La nota debe estar entre 0 y 100.")
+                print("Debe ingresar un número válido para la nota.")
+            return
+    print("No se encontró el curso con ese nombre.")
+
+################################################
+# Función 7: Eliminar un curso
+################################################
+def eliminar_curso():
+    if not cursos:
+        print("No hay cursos registrados.")
+        return
+    
+    nombre_eliminar = input("Ingrese el nombre del curso a eliminar: ").strip().lower()
+    for c in cursos:
+        if c["nombre"].lower() == nombre_eliminar:
+            confirmar = input(f"¿Está seguro que desea eliminar '{c['nombre']}'? (s/n): ").strip().lower()
+            if confirmar == "s":
+                cursos.remove(c)
+                print(f"Curso '{c['nombre']}' eliminado correctamente.")
+            else:
+                print("Operación cancelada, el curso no fue eliminado.")
+            return
+    print("No se encontró el curso con ese nombre.")
+
+#############################
+# MENÚ PRINCIPAL
+#############################
+def menu():
+    while True:
+        print("\n====== GESTOR DE NOTAS ACADÉMICAS ======")
+        print("1. Registrar nuevo curso")
+        print("2. Mostrar todos los cursos y notas")
+        print("3. Calcular promedio general")
+        print("4. Contar cursos aprobados y reprobados")
+        print("5. Buscar curso por nombre (búsqueda lineal)")
+        print("6. Actualizar nota de un curso")
+        print("7. Eliminar un curso")
+        print("8. Salir")
+        
+        opcion = input("Seleccione una opción: ").strip()
+        
+        if opcion == "1":
+            registrar_curso()
+        elif opcion == "2":
+            mostrar_cursos()
+        elif opcion == "3":
+            calcular_promedio()
+        elif opcion == "4":
+            contar_aprobados_reprobados()
+        elif opcion == "5":
+            buscar_curso()
+        elif opcion == "6":
+            actualizar_nota()
+        elif opcion == "7":
+            eliminar_curso()
+        elif opcion == "8":
+            print("Saliendo del sistema. ¡Hasta luego!")
+            break
+        else:
+            print("Opción inválida. Intente de nuevo.")
+
+# Ejecutar el programa
+if __name__ == "__main__":
+    menu()
