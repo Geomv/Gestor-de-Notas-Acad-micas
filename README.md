@@ -52,5 +52,5 @@ Lo más difícil fue lograr que todas las partes del programa trabajaran bien ju
 
      ¿Qué mejoraría si tuviera más tiempo?
 
-Si tuviera más tiempo, mejoraría el diseño del código para que fuera más ordenado y fácil de mantener. También agregaría una opción para guardar las notas en un archivo y poder cargarlas después, así no se perderían al cerrar el programa. Además, me gustaría poner una interfaz más visual para hacerlo más atractivo y fácil de usar.
+Si tuviera más tiempo, pienso que sería bueno agregar una opción para guardar las notas en un archivo y poder cargarlas después, así no se perderían al cerrar el programa. 
 
