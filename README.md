@@ -48,7 +48,7 @@ Aprendí a organizar mejor un programa usando funciones y menús interactivos. T
 
      ¿Qué fue lo más desafiante de resolver?
 
-Lo más difícil fue lograr que todas las partes del programa trabajaran bien juntas, especialmente al actualizar o eliminar datos sin que se dañara la lista principal. También me costó entender cómo aplicar los algoritmos de ordenamiento e integrarlos al menú de opciones sin que el programa se cerrara por error.
+Lo más difícil fue lograr que todas las partes del programa trabajaran bien juntas, especialmente al actualizar o eliminar datos sin que se dañara la lista principal. 
 
      ¿Qué mejoraría si tuviera más tiempo?
 
