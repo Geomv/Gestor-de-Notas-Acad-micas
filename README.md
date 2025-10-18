@@ -40,5 +40,17 @@ Diseño del menú principal en pseudocódigo:
 
      -Marcadores de posición <acción> para indicar dónde irá la lógica detallada en las siguientes entregas
 
-    
+Reflexión Personal
+
+     ¿Qué aprendí con este proyecto?
+
+Aprendí a organizar mejor un programa usando funciones y menús interactivos. También entendí cómo se usan las listas, pilas y colas para guardar y manejar información. Además, pude aplicar algoritmos de ordenamiento y búsqueda de una manera práctica, lo que me ayudó a comprender mejor cómo funcionan en la vida real, no solo en teoría.
+
+     ¿Qué fue lo más desafiante de resolver?
+
+Lo más difícil fue lograr que todas las partes del programa trabajaran bien juntas, especialmente al actualizar o eliminar datos sin que se dañara la lista principal. También me costó entender cómo aplicar los algoritmos de ordenamiento e integrarlos al menú de opciones sin que el programa se cerrara por error.
+
+     ¿Qué mejoraría si tuviera más tiempo?
+
+Si tuviera más tiempo, mejoraría el diseño del código para que fuera más ordenado y fácil de mantener. También agregaría una opción para guardar las notas en un archivo y poder cargarlas después, así no se perderían al cerrar el programa. Además, me gustaría poner una interfaz más visual para hacerlo más atractivo y fácil de usar.
 
